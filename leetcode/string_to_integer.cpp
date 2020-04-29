@@ -1,7 +1,11 @@
 class Solution {
 public:
     int myAtoi(string str) {
-        int i = 0;
+        
+	//Option 1
+	//without using stringstream
+	
+	int i = 0;
         while(str[i] == ' ')
             i++;
         if(i == str.length())
@@ -63,5 +67,16 @@ public:
         }
         long int x = (n) ? -num : num;
         return x;
+
+	//Option 2
+	//using stringstream
+	/*
+	 int r=0;
+	 stringstream ss;
+	 ss<<str;
+	 ss>>r;
+	 return r;
+	*/
+
     }
 };
