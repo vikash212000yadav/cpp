@@ -1,7 +1,6 @@
 class Solution {
 public:
     int calculateMinimumHP(vector<vector<int>>& dungeon) {
-        int r = dungeon.size();   
         if(dungeon.size() == 0) 
             return 0; 
         int m = dungeon[0].size(); 
